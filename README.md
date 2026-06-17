@@ -145,11 +145,12 @@ post_war : 2023-10-07 이후
 
 | 모델명 | Hugging Face 모델 ID | 특징 |
 |---|---|---|
-| GoEmotions | `SamLowe/roberta-base-go_emotions` | GoEmotions 데이터셋 기반 RoBERTa 모델로, 28개 세부 감정 점수를 산출하며 최종 감정 피처 생성에 활용 |
-| BERT GoEmotions | `monologg/bert-base-cased-goemotions-original` | GoEmotions 기반 BERT 모델 |
-| DistilBERT GoEmotions | `joeddav/distilbert-base-uncased-go-emotions-student` | 경량화된 GoEmotions 모델 |
-| ModernBERT | `answerdotai/ModernBERT-base` | ModernBERT 기반 감정분석 후보 모델 |
-| Twitter RoBERTa | `cardiffnlp/twitter-roberta-base-sentiment-latest` | 소셜미디어 텍스트에 특화된 RoBERTa 감성 모델 |
+| GoEmotions | `SamLowe/roberta-base-go_emotions` | 원본 GoEmotions 분류기로, 28개 세부 감정 점수를 산출하며 최종 감정 피처 생성에 활용 |
+| BERT-GoEmotions | `monologg/bert-base-cased-goemotions-original` | GoEmotions 데이터셋 기반 BERT 모델 |
+| DistilBERT-GoEmotions | `joeddav/distilbert-base-uncased-go-emotions-student` | 경량화된 GoEmotions 기반 DistilBERT 모델 |
+| DistilRoBERTa-GoEmotions | `j-hartmann/emotion-english-distilroberta-base` | DistilRoBERTa 기반 감정분석 모델 |
+| ModernBERT-GoEmotions | `answerdotai/ModernBERT-base` | ModernBERT 기반 감정분석 후보 모델 |
+| Twitter-RoBERTa | `cardiffnlp/twitter-roberta-base-sentiment-latest` | 소셜미디어 텍스트에 특화된 RoBERTa 감성 모델 |
 
 ### 5.4 Part 2: 상관분석, 시각화 및 모델 선정
 
