@@ -142,11 +142,12 @@ post_war : 2023-10-07 이후
 
 ### 5.3 사용한 감정분석 모델
 
+
 | 모델명 | Hugging Face 모델 ID | 특징 |
 |---|---|---|
+| GoEmotions | `SamLowe/roberta-base-go_emotions` | GoEmotions 데이터셋 기반 RoBERTa 모델로, 28개 세부 감정 점수를 산출하며 최종 감정 피처 생성에 활용 |
 | BERT GoEmotions | `monologg/bert-base-cased-goemotions-original` | GoEmotions 기반 BERT 모델 |
 | DistilBERT GoEmotions | `joeddav/distilbert-base-uncased-go-emotions-student` | 경량화된 GoEmotions 모델 |
-| DistilRoBERTa GoEmotions | `SamLowe/roberta-base-go_emotions` | GoEmotions 기반 RoBERTa 계열 모델 |
 | ModernBERT | `answerdotai/ModernBERT-base` | ModernBERT 기반 감정분석 후보 모델 |
 | Twitter RoBERTa | `cardiffnlp/twitter-roberta-base-sentiment-latest` | 소셜미디어 텍스트에 특화된 RoBERTa 감성 모델 |
 
@@ -159,7 +160,7 @@ post_war : 2023-10-07 이후
 1. Reddit 댓글 전처리 데이터 생성
 2. GoEmotions 기반 감정분석 수행
 3. 모델별 daily emotion CSV 로드
-4. Part 1 감정 모델 분석 결과와 함께 비교
+-----------part1 감정 모델 분석과 비슷----------------------
 4. ETF 및 시장 데이터(`final_daily_etf.csv`)와 날짜 기준 병합
 5. 감정 지표 구성
 6. Spearman 상관분석 수행
@@ -521,8 +522,8 @@ Accuracy만 사용할 경우 특정 클래스에 편향된 예측이 과대평�
 ### 9.1 저장소 클론
 
 ```bash
-git clone https://github.com/timjin06/NLP_PROJECY.git
-cd NLP_PROJECY
+git clone https://github.com/your-username/your-repository-name.git
+cd your-repository-name
 ```
 
 ### 9.2 가상환경 생성
